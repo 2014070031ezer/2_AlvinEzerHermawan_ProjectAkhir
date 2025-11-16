@@ -1,0 +1,225 @@
+/* GENERAL */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    padding-top: 90px; /* space for fixed navbar */
+    margin: 0;
+}
+
+/* BACKGROUND SECTION (login + register + preferences) */
+.login-section {
+    min-height: 100vh;
+    background: url("store.jpeg") center/cover no-repeat fixed;
+    position: relative;
+}
+
+.login-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+/* FORM BOX (login + register + preferences) */
+.login-box {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(7px);
+    width: 380px;
+    max-width: 95%;
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+/* HEADING INSIDE BOX */
+.login-box h2 {
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+/* BASE INPUT / SELECT STYLE (login + register + preferences) */
+.ysl-input {
+    background: transparent;
+    border: 1px solid #888;
+    color: white;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Ensure Bootstrap doesn't override core look */
+.form-control.ysl-input {
+    background-color: transparent;
+    border: 1px solid #888;
+    color: white;
+    box-shadow: none;
+}
+
+/* FOCUS STATE */
+.form-control.ysl-input:focus {
+    border-color: white;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    box-shadow: none;
+}
+
+/* PLACEHOLDER (for text/email/password/number inputs) */
+.form-control.ysl-input::placeholder {
+    color: #b0b0b0;
+    opacity: 1;
+}
+
+.form-control.ysl-input::-webkit-input-placeholder {
+    color: #b0b0b0;
+    opacity: 1;
+}
+
+.form-control.ysl-input:-ms-input-placeholder {
+    color: #b0b0b0;
+    opacity: 1;
+}
+
+.form-control.ysl-input::-ms-input-placeholder {
+    color: #b0b0b0;
+    opacity: 1;
+}
+
+/* ---- SELECT-SPECIFIC OVERRIDES ---- */
+
+/* Selected text when the dropdown is closed */
+.ysl-select {
+    color: #ffffff;              /* white text when closed to match dark UI */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Some browsers use this for the internal text */
+.ysl-select option {
+    color: #000000 !important;          /* force black text in dropdown list */
+    background-color: #ffffff !important; /* white background */
+}
+
+/* For older Firefox variants */
+.ysl-select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #ffffff;
+}
+
+/* BUTTON */
+.btn-ysl {
+    background: white;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 0;
+    padding: 10px 0;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.btn-ysl:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    transition: 0.3s ease;
+}
+
+/* LINK TEXT (for login/register pages) */
+.ysl-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.ysl-link:hover {
+    opacity: 0.7;
+}
+
+/* NAVBAR YSL STYLE */
+.ysl-navbar {
+    background-color: #000000 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Brand logo area: sedikit spacing */
+.ysl-navbar .navbar-brand {
+    letter-spacing: 0.18em;
+    font-size: 0.9rem;
+}
+
+/* Link di navbar */
+.ysl-navbar .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.75rem;
+    color: #f5f5f5;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Hover & active */
+.ysl-navbar .nav-link:hover,
+.ysl-navbar .nav-link:focus {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+/* Logout link warna agak berbeda */
+.ysl-navbar .nav-logout {
+    color: #ffb6c1;
+}
+
+.ysl-navbar .nav-logout:hover {
+    color: #ffffff;
+    opacity: 1;
+}
+
+/* Toggler (mobile) */
+.ysl-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.ysl-navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Responsif: sedikit besarkan klik area di mobile */
+@media (max-width: 991.98px) {
+    .ysl-navbar .nav-link {
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+}
+
+select.ysl-input {
+    background: transparent;
+    border: 1px solid #888;
+    color: #ffffff;          /* warna teks saat select tertutup (value terpilih) */
+    width: 100%;
+    padding: 9px 11px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* ketika fokus */
+select.ysl-input:focus {
+    border-color: #ffffff;
+    background: rgba(255,255,255,0.05);
+}
+
+/* warna teks di dalam dropdown list */
+select.ysl-input option {
+    color: #000000 !important;          /* teks hitam */
+    background-color: #ffffff !important;  /* background putih */
+}

@@ -1,0 +1,165 @@
+/* Background video full screen */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(40%);
+}
+
+/* Navbar styling */
+.navbar-brand {
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    opacity: 0.7;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn-outline-light {
+    border-width: 2px;
+    border-radius: 0;
+}
+
+.btn-outline-light:hover {
+    background: white;
+    color: black;
+}
+
+/* ABOUT & LOGIN sections */
+#about, #login {
+    position: relative;
+    z-index: 2;
+}
+
+/* Paragraph style */
+p {
+    color: #e5e5e5;
+}
+
+/* PRODUCT SECTION UPDATE */
+/* Frame menyesuaikan ukuran gambar dan tidak memenuhi layar */
+.carousel-frame {
+  max-width: 500px;   /* atur batas lebar */
+  max-height: 650px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Gambar mengikuti bingkai */
+.carousel-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Judul produk */
+.product-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* --- CAROUSEL ARROWS (YSL STYLE) --- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.9); /* panah terlihat jelas */
+    background-size: 60%;
+    border-radius: 50%;
+}
+
+/* === YSL THIN WHITE ARROWS FOR CAROUSEL === */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+/* Panah putih stroke tipis */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='1.5' fill='none' viewBox='0 0 16 16'%3E%3Cpath d='M11 1L3 8l8 7'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' stroke='white' stroke-width='1.5' fill='none' viewBox='0 0 16 16'%3E%3Cpath d='M5 1l8 7-8 7'/%3E%3C/svg%3E");
+}
+
+/* Panah selalu terlihat */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1 !important;
+    width: 8%;
+}
+
+/* Hover subtle effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* FOOTER */
+.ysl-footer {
+    background: #000;
+    border-top: 1px solid #333;
+}
+
+.footer-links .footer-link {
+    color: #dcdcdc;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.footer-links .footer-link:hover {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+.ysl-footer img {
+    filter: grayscale(100%);
+}
+
+.ysl-footer img:hover {
+    filter: grayscale(0%);
+    transition: 0.3s ease;
+}
+
+.ysl-footer p {
+    color: #cfcfcf;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}

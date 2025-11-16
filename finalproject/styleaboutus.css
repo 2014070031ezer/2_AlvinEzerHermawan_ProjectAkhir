@@ -1,0 +1,108 @@
+/* GENERAL */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+/* HEADER */
+.about-header {
+    background: url('aboutbg.jpg') center/cover no-repeat;
+    height: 70vh;
+    position: relative;
+    margin-top: 80px;
+}
+
+.about-header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.about-header .text-center {
+    position: relative;
+    z-index: 2;
+}
+
+.title-spacing {
+    letter-spacing: 4px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.about-header {
+    background: url('laurent.jpg') center/cover no-repeat;
+    height: 70vh;
+    position: relative;
+    margin-top: 80px;
+}
+
+.about-header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* dark overlay for elegant contrast */
+}
+
+.about-header .text-center {
+    position: relative;
+    z-index: 2;
+}
+
+/* CONTENT */
+.section-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-left: 3px solid white;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    text-align: justify;
+    line-height: 1.9;
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+/* TIMELINE */
+.timeline {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline li {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.timeline .year {
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+
+/* FOOTER */
+.footer-dark {
+    background: #000;
+    color: white;
+}
+
+.footer-title {
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-link:hover {
+    opacity: 0.6;
+}
